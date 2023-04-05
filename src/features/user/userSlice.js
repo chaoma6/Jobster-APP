@@ -9,6 +9,7 @@ import {
 
 const initialState = {
 	isLoading: false,
+	isSidebarOpen: false,
 	user: getUserFromLocalStorage(),
 };
 
@@ -36,6 +37,16 @@ export const LoginUser = createAsyncThunk('user/loginUser', async (user, thunkAP
 const userSlice = createSlice({
 	name: 'user',
 	initialState,
+	reducers: {
+		toggleSidebar: (state) => {
+			state.isSidebarOpen = !state.isSidebarOpen;
+		},
+		logoutUser: (state) => {
+			state.user = null;
+			state.isSidebarOpen = false;
+			removeUserFromLocalStorage();
+		},
+	},
 	extraReducers: (builder) => {
 		builder
 			.addCase(registerUser.pending, (state) => {
@@ -70,3 +81,4 @@ const userSlice = createSlice({
 });
 
 export default userSlice.reducer;
+export const { toggleSidebar, logoutUser } = userSlice.actions;
