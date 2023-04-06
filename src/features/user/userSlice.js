@@ -87,7 +87,6 @@ const userSlice = createSlice({
 			.addCase(updateUser.rejected, (state, { payload }) => {
 				state.isLoading = false;
 				toast.error(payload);
-				console.log(payload);
 			});
 	},
 });

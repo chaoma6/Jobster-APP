@@ -6,6 +6,7 @@ import Logo from './Logo';
 import Navbar from './Navbar';
 import SearchContainer from './SearchContainer';
 import SmallSidebar from './SmallSidebar';
+import JobInfo from './JobInfo'
 
 export {
 	Logo,
@@ -16,4 +17,5 @@ export {
 	JobsContainer,
 	Job,
 	SearchContainer,
+	JobInfo,
 };
