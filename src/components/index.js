@@ -14,6 +14,7 @@ import StatItem from './StatItem';
 import ChartsContainer from './ChartsContainer';
 import Loading from './Loading';
 import FormRowSelect from './FormRowSelect';
+import PageBtnContainer from './PageBtnContainer';
 
 export {
 	Logo,
@@ -32,4 +33,5 @@ export {
 	StatItem,
 	FormRowSelect,
 	ChartsContainer,
+	PageBtnContainer,
 };
