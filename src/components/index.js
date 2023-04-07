@@ -6,7 +6,13 @@ import Logo from './Logo';
 import Navbar from './Navbar';
 import SearchContainer from './SearchContainer';
 import SmallSidebar from './SmallSidebar';
-import JobInfo from './JobInfo'
+import JobInfo from './JobInfo';
+import AreaChart from './AreaChart';
+import BarChart from './BarChart';
+import StatsContainer from './StatsContainer';
+import StatItem from './StatItem';
+import ChartsContainer from './ChartsContainer';
+import Loading from './Loading';
 
 export {
 	Logo,
@@ -18,4 +24,10 @@ export {
 	Job,
 	SearchContainer,
 	JobInfo,
+	AreaChart,
+	Loading,
+	BarChart,
+	StatsContainer,
+	StatItem,
+	ChartsContainer,
 };
