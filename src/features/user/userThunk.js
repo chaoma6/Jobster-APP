@@ -1,4 +1,5 @@
 import customFetch, { checkForUnauthorizedResponse } from '../../utils/axios';
+import { logoutUser } from './userSlice';
 import { clearAllJobsState } from '../allJobs/allJobsSlice';
 import { clearValues } from '../job/jobSlice';
 
