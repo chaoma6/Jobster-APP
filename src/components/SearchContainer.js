@@ -34,6 +34,10 @@ const SearchContainer = () => {
 		};
 	};
 
+	const optimizedDebounce = useMemo(() => {
+		debounce();
+	}, []);
+
 	return (
 		<Wrapper>
 			<form className='form'>
@@ -44,7 +48,7 @@ const SearchContainer = () => {
 						type='text'
 						name='search'
 						value={localSearch}
-						handleChange={debounce()}
+						handleChange={optimizedDebounce}
 					/>
 					{/* search by status */}
 					<FormRowSelect
