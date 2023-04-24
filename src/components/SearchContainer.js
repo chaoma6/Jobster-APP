@@ -6,8 +6,9 @@ import { handleChange, clearFilters } from '../features/allJobs/allJobsSlice';
 
 const SearchContainer = () => {
 	const [localSearch, setLocalSearch] = useState('');
-	const { isLoading, search, searchStatus, searchType, sort, sortOptions } =
-		useSelector((store) => store.allJobs);
+	const { isLoading, searchStatus, searchType, sort, sortOptions } = useSelector(
+		(store) => store.allJobs
+	);
 	const { jobTypeOptions, statusOptions } = useSelector((store) => store.job);
 	const dispatch = useDispatch();
 
@@ -36,6 +37,7 @@ const SearchContainer = () => {
 
 	const optimizedDebounce = useMemo(() => {
 		debounce();
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	return (
