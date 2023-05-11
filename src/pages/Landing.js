@@ -17,12 +17,12 @@ const Landing = () => {
 						job <span>tracking</span> app
 					</h1>
 					<p>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-						Consequatur praesentium laboriosam fugit amet sint culpa delectus
-						cum error maiores distinctio impedit, ab iure itaque mollitia?
+						Maximize Your Job Search Success with Our Job Tracking App -
+						Powerful Stats to Help You Optimize Your Strategy and Land Your
+						Dream Job!
 					</p>
 					<Link to='/register' className='btn btn-hero'>
-						Login/Register
+						Login / Register
 					</Link>
 				</div>
 				<img src={main} alt='job hunt' className='img main-img' />
